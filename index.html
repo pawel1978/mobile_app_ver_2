@@ -53,7 +53,7 @@ minimum-scale=1, width=device-width, height=device-height, target-densitydpi=dev
 
         
      function onDeviceReady() {
-        checkConnection();
+      //  checkConnection();
         
     }
     
@@ -70,10 +70,16 @@ minimum-scale=1, width=device-width, height=device-height, target-densitydpi=dev
     <script src="jquery.xdomainajax.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			
 		   $("#page1").click(function(){
 		   	$('#result').load('page1.html');
 		     //alert("Thanks for visiting!");
 		   }); 
+	   //test conection
+           $("#contest").click(function(){
+            checkConnection();
+           }); 	   
+		   
 		 });
 	 </script>
 	 
@@ -166,9 +172,12 @@ border:none;
 <div id="target"></div>
 
 
-	<ul>
+<ul>
+    <li><a href="http://design78.net" class="ajaxtrigger">Pawel External</a></li>
 	<li><a id="page1" href="#">About</a></li>
+    <li><a id="contes" href="#">Test connection</a></li>
 </ul>
+
 tu bedzie page1.html albo pawelj.cal.pl/external.php, css musi byc w pliku index aplikacji
 <hr />
 <div id="result" style="clear:both;"></div>
