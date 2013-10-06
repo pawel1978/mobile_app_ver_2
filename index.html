@@ -85,6 +85,26 @@ minimum-scale=1, width=device-width, height=device-height, target-densitydpi=dev
 		 });
 	 </script>
 	 
+	 
+ <script type="text/javascript">
+    $(document).ready(function() {
+
+        document.addEventListener("backbutton", onBackKeyDown, false);
+
+       document.addEventListener("menubutton", onMenuKeyDown, false);
+    });
+
+    function onBackKeyDown() {
+        // your code..
+        alert('Back Button pressed..');
+    }
+    function onMenuKeyDown() {
+        // your code..
+        alert('Menu Button pressed..');
+    }
+</script>   	 
+	 
+	 
 <style type="text/css">
 #result img{
 width:200px;
