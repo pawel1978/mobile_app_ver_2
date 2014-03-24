@@ -39,6 +39,7 @@
     function onDeviceReady() {
         // Register the event listener
         document.addEventListener("menubutton", onMenuKeyDown, false);
+        function get_frame()
     }
 
     // Handle the menu button
@@ -48,6 +49,14 @@
     	navigator.app.exitApp();
     }
     
+    
+    function get_frame(){
+var height = $( window ).height();
+var height2 = height - 42;
+var tekst = '<iframe id="frame_bottom" style="width:100%;height:'+ height2 +'px;" src="http://www.design78.net?tester=dziala"></iframe>';
+$("#frame").html(tekst);
+}
+    
     $('#frame_bottom') = $( window ).height();
 
     </script>
@@ -55,7 +64,7 @@
   </head>
   <body onload="onLoad()">
 
-  <iframe id="frame_bottom" style="width:100%;height:500px;" src="http://www.design78.net/"></iframe>
+<div id="frame"></div>
 
   </body>
 </html>
