@@ -54,7 +54,7 @@
     </script>
     
  <script>
-alert('test');
+//alert('test');
 //var height = $( window ).height();
 //var height = '400';
 //var height2 = height - 42;
@@ -67,9 +67,19 @@ $("#frame").html('test jakis');
     
   </head>
   <body>
+  <!--
 onload="onLoad()"
+-->
+<style>
+iframe{
+	border:0px;
+	padding:0px;
+	margin:0px;
+}	
+</style>
+
 <div id="frame"></div>
-<hr />
+
 <iframe id="frame_bottom2" style="width:100%;height:400px;" src="http://www.vipliko.com"></iframe>
 
   </body>
