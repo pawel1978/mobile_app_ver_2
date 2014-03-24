@@ -33,7 +33,6 @@
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
         
-                get_frame();
     }
 
     // device APIs are available
@@ -50,18 +49,21 @@
     	navigator.app.exitApp();
     }
     
+   
+
+    </script>
     
-    function get_frame(){
+ <script>
+alert('test');
 var height = $( window ).height();
+
 //var height2 = height - 42;
 alert(height);
 var tekst = '<iframe id="frame_bottom" style="width:100%;height:'+ height +'px;" src="http://www.vipliko.com"></iframe>';
 $("#frame").html(tekst);
-}
+	
+ </script>   
     
- 
-
-    </script>
     
   </head>
   <body onload="onLoad()">
