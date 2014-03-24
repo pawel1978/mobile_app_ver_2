@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!--
 <html>
 
 	<head>
@@ -8,7 +8,7 @@
 
 		<script>
 
-			window.location='./main.html';
+		//	window.location='./main.html';
 
 		</script>
 
@@ -17,4 +17,37 @@
 
 	</body>
 
+</html>
+
+-->
+
+<html>
+  <head>
+    <title>Menu Button Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("menubutton", onMenuKeyDown, false);
+    }
+
+    // Handle the menu button
+    //
+    function onMenuKeyDown() {
+    }
+
+    </script>
+  </head>
+  <body onload="onLoad()">
+  </body>
 </html>
